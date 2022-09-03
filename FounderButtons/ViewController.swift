@@ -20,18 +20,24 @@ class ViewController: UIViewController {
 
     }
 
+
     @IBAction func topButtonPressed(_ sender: UIButton) {
         print("The top button was pressed!")
         topLabel.text = "Larry Page"
         lowerLabel.text = "Sergey Brin"
     }
     
+    
     @IBAction func lowerButtonPressed(_ sender: UIButton) {
         print("The lower button was pressed!")
         topLabel.text = "Jennifer Hyman"
         lowerLabel.text = "Jenny Fleiss"
-
-
+    }
+    
+    @IBAction func clearButtonPressed(_ sender: UIButton) {
+        print("The Clear button was pressed!")
+        topLabel.text = ""
+        lowerLabel.text = ""
     }
 }
 
